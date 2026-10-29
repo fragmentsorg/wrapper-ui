@@ -7,7 +7,8 @@ import React, { createContext, useCallback, useEffect, useState } from 'react';
 import { getDefaultProvider, BrowserProvider, Signer } from 'ethers';
 import { Network } from '../config';
 
-export const ENDPOINT = 'https://eth-mainnet.g.alchemy.com/v2/msPtPlRdHn9GWMh7YJkZ4Vt1RmG5Moy2';
+// web-api's read-only JSON-RPC proxy, which holds the node keys, so the bundle carries none.
+export const ENDPOINT = 'https://web-api.ampleforth.org/rpc/ethereum';
 
 const WALLET_CONNECT_PROJECT_ID = '9cd51cf8d352a6ec2223b9a249097ae6';
 
